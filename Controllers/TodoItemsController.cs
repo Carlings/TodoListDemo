@@ -29,6 +29,8 @@ namespace TodoListDemo.Controllers
             return Ok(todo);
         }
 
+        // This contoller get id and delete todo`s from database
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteToDoById(int id)
         {
